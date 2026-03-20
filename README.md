@@ -107,16 +107,7 @@ Mathematical analysis: for Brier Score, aggressive predictions (T < 1.0) outperf
 
 ## Tournament Performance
 
-### Day 1 — Men's R64 (16 games)
-- 6 upsets out of 16 games (37.5% — abnormally high)
-- Non-upset games: average Brier **0.003** (near-perfect)
-- Upset games: average Brier **0.401** (model assigned too-low probabilities)
-- The issue isn't that upsets happened — it's that our probability estimates for them were poorly calibrated (e.g., 21% for High Point who beat Wisconsin)
-
-### Day 2 — Men's R64 + Women's R64 (18 games)
-- Only 1 upset (Villanova over Utah State)
-- Women's 10 games: average Brier **0.024** (near-perfect)
-- Combined Day 1+2: **0.096** Brier across 34 games
+*Tournament is still in progress — results will be updated after completion.*
 
 ## Lessons Learned
 
@@ -134,11 +125,14 @@ Mathematical analysis: for Brier Score, aggressive predictions (T < 1.0) outperf
 - pandas, numpy, scipy
 - Jupyter Notebook
 
+## Team
+
+This is a team competition. I collaborated with Xinwei Huang on feature engineering and experiment design. This repo contains my implementation.
+
 ## Detailed Writeup
 
 See [PROJECT_SUMMARY.md](PROJECT_SUMMARY.md) for the full technical deep-dive, including:
 - Complete feature engineering details
 - Overfitting diagnosis methodology
 - Past winning solution analysis
-- Team collaboration notes
 - Interview-ready technical narratives
