@@ -1,0 +1,66 @@
+Naive (all 0.5):       Brier = 0.2500
+Seed-only baseline:    Brier = 0.1770
+Logistic Regression:   Brier = 0.1661
+LightGBM (all feats):  Brier = 0.1699
+
+Per-season:
+   season  n_games  brier_score  log_loss  pred_mean  label_mean
+0    2019      130     0.148104  0.438456   0.492986    0.469231
+1    2021      129     0.186480  0.550794   0.540840    0.534884
+2    2022      134     0.179496  0.528753   0.485554    0.447761
+3    2023      134     0.194585  0.571420   0.482441    0.514925
+4    2024      134     0.175908  0.507114   0.499201    0.559701
+5    2025      134     0.134740  0.414091   0.497209    0.514925
+
+Top features:
+                        feature   importance
+100       diff_elo_conservative  4499.822146
+149                   diff_seed  1173.184733
+101               diff_elo_mean   486.416738
+91                diff_sos_mean   442.581851
+98            diff_elo_standard   381.010299
+156              h2h_avg_margin   310.339430
+102                diff_elo_std   257.299377
+137   diff_conf_median_win_rate   233.878910
+35             diff_FT_rate_std   212.696064
+83                diff_Poss_std   204.783878
+4               diff_avg_margin   193.267319
+37         diff_opp_eFG_pct_std   189.440179
+90               diff_efg_trend   188.735241
+62           diff_ast_rate_mean   187.978311
+56             diff_ft_pct_mean   183.377010
+55             diff_fg3_pct_std   180.162900
+67            diff_blk_rate_std   176.901418
+92              diff_sos_median   175.454731
+107           diff_rank_std_all   172.968221
+45      diff_off_efficiency_std   172.901879
+24         diff_recent_win_rate   166.040977
+81          diff_opp_ft_pct_std   156.196641
+33              diff_OR_pct_std   154.578645
+95           diff_weighted_wins   150.652009
+119               diff_rank_KPK   147.013581
+66           diff_blk_rate_mean   144.372211
+41          diff_opp_OR_pct_std   142.268457
+52             diff_fg_pct_mean   138.576259
+71          diff_reb_margin_std   137.189420
+80         diff_opp_ft_pct_mean   130.827274
+94        diff_strong_opp_games   127.199850
+34            diff_FT_rate_mean   127.088685
+57              diff_ft_pct_std   126.997619
+53              diff_fg_pct_std   123.126009
+44     diff_off_efficiency_mean   122.321372
+146           diff_coach_tenure   119.364880
+9                   diff_avg_ot   118.031289
+99          diff_elo_aggressive   116.162912
+48     diff_net_efficiency_mean   104.387930
+84   diff_recent_off_efficiency   101.471250
+46     diff_def_efficiency_mean    97.180290
+43         diff_opp_FT_rate_std    97.116330
+38        diff_opp_TO_rate_mean    95.949450
+87          diff_recent_eFG_pct    94.319180
+88          diff_recent_TO_rate    94.030299
+72          diff_total_reb_mean    93.622023
+59            diff_fg3_rate_std    93.581151
+138        diff_conf_avg_margin    93.294291
+85   diff_recent_def_efficiency    92.210880
+89               diff_eff_trend    91.951670

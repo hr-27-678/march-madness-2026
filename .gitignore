@@ -1,0 +1,31 @@
+# Competition data (too large, users should download from Kaggle)
+march-machine-learning-mania-2026/
+
+# Generated/cached files
+train_features.csv
+*.pyc
+__pycache__/
+notebooks/catboost_info/
+.ipynb_checkpoints/
+
+# IDE / system
+.claude/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Past solutions (not our code)
+past winning solution/
+
+# Docs in Chinese (not needed for GitHub)
+data描述.docx
+
+# Temporary files
+*.tmp
+*.bak
+
+# Large submission files (keep structure, ignore CSVs)
+submissions/stage1/*.csv
+submissions/stage2/*.csv
+notebooks/submissions/
